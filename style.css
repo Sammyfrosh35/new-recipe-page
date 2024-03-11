@@ -1,0 +1,176 @@
+
+:root {
+    --white: #ffffff;
+    --rose-white: hsl(330, 100%, 98%);  
+    --eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    --Nutmeg: hsl(14, 45%, 36%)
+    --DarkRaspberry: hsl(332, 51%, 32%)
+  }
+
+
+
+
+  
+  body {
+    background-color: var(--eggshell);
+    margin: 0 auto;
+   padding: 0;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .highlight {
+    background-color: var(--rose-white);
+    align-items: center;
+    width: 50%;
+    
+    border-radius: 1rem; 
+ 
+  }
+  
+.header{
+    background-color: var(--rose-white); 
+    color: hsl(0, 0%, 100%);  
+    
+ 
+}
+.header img{
+  border-radius: 10px;
+  margin: 20px;
+  width: 90%;
+  
+}
+.secondary-text{
+  font-family: "Young Serif", serif;
+  color: rgb(117, 78, 78);
+  font-weight: bold;
+  padding: 22px;
+}
+
+.primary-text{
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: var(--WengeBrown);
+  margin-left: 10px;
+  /* padding-left: 35px; */
+
+}
+
+h3{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  /* padding-left: 22px; */
+  color: rgb(44, 15, 68);
+  margin-bottom: 1rem;
+}
+
+
+h1{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.wrapper{
+  background-color: rgb(247, 236, 238);
+  border-radius: 5px;
+  margin: 15px;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* .description,
+.ingredients,
+.instructions {
+  margin-top: 2rem;
+}  */
+
+hr{
+      border: 1px solid #ddd; 
+      margin-left: 15px ; 
+      margin-right: 15px;
+    
+}
+
+.table-text{
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: rgb(117, 78, 78);
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+
+
+table {
+  border-collapse: collapse;  /* Merges adjacent table borders */
+  width: 100%;  /* Adjust width as needed */
+  border-spacing: 60px;
+  margin-left: 15px ; 
+ 
+}
+ 
+tr {
+  border-bottom: 1px solid #ddd;
+ 
+}
+ td {
+  padding: 15px;
+}
+
+
+
+
+
+
+@media (min-width: 1440px) {
+  body {
+    
+    padding: 4rem;
+  }
+
+  main {
+    max-width: 1440px;
+    margin: 0 auto;  
+  }
+
+  .header img {
+    
+    max-width: 700px;
+  }
+
+  
+}
+
+@media (max-width: 375px) {
+  
+  header,
+  main
+ {
+    padding: 1rem; 
+  }
+  
+  h1,
+  h2,h3 {
+    font-size: 1.2rem;  
+  }
+  
+  .header img {
+    width: 100%;  
+  }
+}
