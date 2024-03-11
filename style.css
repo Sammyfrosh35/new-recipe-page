@@ -1,4 +1,14 @@
 
+@font-face {
+  font-family: "outfit";
+  src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "young-serif";
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+
 :root {
     --white: #ffffff;
     --rose-white: hsl(330, 100%, 98%);  
@@ -6,134 +16,195 @@
     --LightGrey: hsl(30, 18%, 87%);
     --WengeBrown: hsl(30, 10%, 34%);
     --DarkCharcoal: hsl(24, 5%, 18%);
-    --Nutmeg: hsl(14, 45%, 36%)
-    --DarkRaspberry: hsl(332, 51%, 32%)
+    --Nutmeg: hsl(14, 45%, 36%);
+    --dark-rasberry: hsl(332, 51%, 32%)
   }
 
 
 
+* {
+  color: var(--wnege-brown);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "outfit";
+} 
 
-  
-  body {
+body{
     background-color: var(--eggshell);
-    margin: 0 auto;
-   padding: 0;
-   display: flex;
-  justify-content: center;
-  align-items: center;
   }
-  
-  .highlight {
-    background-color: var(--rose-white);
+
+  .section {
+    background-color: var(--white);
     align-items: center;
-    width: 50%;
-    
     border-radius: 1rem; 
- 
+    width: 40%;
+  } 
+
+
+  header {
+    display: block;
+    margin-bottom: 1.2rem;
   }
   
-.header{
-    background-color: var(--rose-white); 
-    color: hsl(0, 0%, 100%);  
-    
- 
-}
-.header img{
-  border-radius: 10px;
-  margin: 20px;
-  width: 90%;
+  header img {
+    width: 97%;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.1rem;
+    color: var(--dark-charcoal);
+    font-family: "young-serif" ;
   
-}
-.secondary-text{
-  font-family: "Young Serif", serif;
-  color: rgb(117, 78, 78);
-  font-weight: bold;
-  padding: 22px;
-}
-
-.primary-text{
-  font-size: 16px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  color: var(--WengeBrown);
-  margin-left: 10px;
-  /* padding-left: 35px; */
-
-}
-
-h3{
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  /* padding-left: 22px; */
-  color: rgb(44, 15, 68);
-  margin-bottom: 1rem;
-}
+  }
 
 
-h1{
-  font-family: "Young Serif", serif;
-  font-weight: 400;
-  padding: 5px;
-}
-
-.wrapper{
-  background-color: rgb(247, 236, 238);
-  border-radius: 5px;
-  margin: 15px;
-}
-
-ul,
-ol {
-  padding-left: 1.5rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-
-/* .description,
-.ingredients,
-.instructions {
-  margin-top: 2rem;
-}  */
-
-hr{
-      border: 1px solid #ddd; 
-      margin-left: 15px ; 
-      margin-right: 15px;
-    
-}
-
-.table-text{
-  font-size: 16px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  color: rgb(117, 78, 78);
-  font-weight: bold;
-  margin-left: 2px;
-}
+  .preparation-section {
+    width: 100%;
+    height: 200px;
+  }
+  .main-card {
+    margin: 20px auto;
+    width: 85%;
+    background-color: var(--rose-white);
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  .main-card h4 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--dark-rasberry);
+  }
+  .main-card ul li {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .main-card ul li span {
+    font-weight: 700;
+    margin-left: 10px;
+  }
 
 
+  .ingredients-section {
+    margin: 10px 5px;
+    padding: 10px 10px;
+  }
+  
+ .ingredients-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--nutmeg);
+    font-family: "young-serif";
+  }
+  
+ .ingredients-section ul {
+    margin: 0 20px;
+  }
+ .ingredients-section ul li {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
 
-table {
-  border-collapse: collapse;  /* Merges adjacent table borders */
-  width: 100%;  /* Adjust width as needed */
-  border-spacing: 60px;
-  margin-left: 15px ; 
- 
-}
- 
-tr {
-  border-bottom: 1px solid #ddd;
- 
-}
- td {
-  padding: 15px;
-}
+ .ingredients-section hr {
+    margin-top: 20px;
+    width: 90%;
+    height: 1px;
+    color: var(--light-grey);
+  }
 
 
+  .instructions-section {
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  
+  .instructions-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--nutmeg);
+    font-family: "young-serif";
+  
+  }
+  
+  .instructions-section ol {
+    margin: 0 5%;
+    width: 80%;
+  }
+  .instructions-section ol li {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
+  .instructions-section ol li::marker {
+    color: rgb(165, 42, 42);
+    font-weight: 600;
+  }
+  .instructions-section hr {
+    margin-top: 20px;
+    width: 90%;
+    height: 1px;
+    color: var(--light-grey);
+  }
+  
+  .instructions-section ol li span {
+    font-weight: 700;
+  }
+  .main-nutrition {
+    margin: 10px 5px;
+    padding: 10px 10px;
+  }
+  
+  .main-nutrition h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--nutmeg);
+    font-family: "young-serif";
+  
+  }
+  
+  .nutrition-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .nutrition-table hr {
+    width: 100%;
+    height: 1px;
+    color: var(--light-grey);
+  }
+  
+  .nutrition {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .nutrition .value {
+    color: var(--nutmeg);
+    font-weight: 800;
+    width: 40%;
+    text-align: start;
+  }
 
 
 
@@ -144,13 +215,12 @@ tr {
     padding: 4rem;
   }
 
-  main {
+  .section {
     max-width: 1440px;
     margin: 0 auto;  
   }
 
   .header img {
-    
     max-width: 700px;
   }
 
@@ -159,18 +229,42 @@ tr {
 
 @media (max-width: 375px) {
   
-  header,
-  main
- {
-    padding: 1rem; 
-  }
+  body {
+    width: 100%;
+    height: 100vh;
+    padding: auto;
+    background-color: var(--light-grey);
   
-  h1,
-  h2,h3 {
-    font-size: 1.2rem;  
   }
-  
-  .header img {
-    width: 100%;  
+  .section {
+    width: 60%;
+    border-radius: 8px;
+    margin: 3% auto;
+    background-color: var(--white);
+    padding: 40px 10px;
+  }
+  header img {
+    border-radius: 10px;
   }
 }
+
+
+/* @media screen and (min-width: 700px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    padding: auto;
+    background-color: var(--light-grey);
+  
+  }
+  .section {
+    width: 60%;
+    border-radius: 8px;
+    margin: 3% auto;
+    background-color: var(--white);
+    padding: 40px 10px;
+  }
+  header img {
+    border-radius: 10px;
+  }
+} 
